@@ -1,0 +1,11 @@
+title: RP Software
+email: webmaster@rpsoftware.net
+description: >-
+  RP Software
+baseurl: 
+url: https://raceprouk.github.io
+github_username: RaceProUK
+twitter_username: RaceProUK
+
+sass:
+  style: compressed

@@ -1,0 +1,33 @@
+$theme-colors: ( "primary": #ffb01e, "secondary": #ffb01e, "info": #ffb01e, "success": #007f00, "warning": #ffaf00, "danger": #bf0000);
+$body-bg: #502080;
+$body-color: #ffe5b4;
+@import "../_modules/bootstrap/scss/bootstrap";
+h1 img,
+h2 img,
+h3 img,
+h4 img,
+h5 img,
+h6 img {
+    height: 6rem;
+}
+
+td,
+th {
+    @extend .align-middle;
+    @extend .text-center;
+}
+
+.container {
+    max-width: 60rem;
+    &.middle {
+        max-width: 45rem;
+    }
+    &.narrow {
+        max-width: 30rem;
+    }
+}
+
+.error-pic {
+    height: 20rem;
+    width: auto;
+}
