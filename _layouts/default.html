@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' cdn.jsdelivr.net;" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' fonts.gstatic.com use.fontawesome.com; img-src 'self' raceprouk.github.io data:; script-src 'self' cdn.jsdelivr.net; style-src 'self' fonts.googleapis.com use.fontawesome.com;" />
     <meta http-equiv="Cross-Origin-Embedder-Policy" content="require-corp" />
     <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin" />
     <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin" />
@@ -32,22 +32,21 @@
     <meta name="msapplication-TileColor" content="#502080" />
     <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png" />
     <meta name="theme-color" content="#502080" />
-    {% comment %} <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" /> {% endcomment %}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>{{ page.title }} - {{ site.title }}</title>
     <meta name="description" content="{{site.description}}" />
 </head>
 
 <body>
-    {% comment %}
-    <header class="m-5">
+    <header class="m-5 d-none">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
                 </div>
             </div>
         </div>
-    </header> {% endcomment %}
+    </header>
     <main class="m-5">
         <div class="container {{page.container-width}}">
             {{content}}
