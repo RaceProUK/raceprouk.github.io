@@ -1,3 +1,5 @@
 theme: jekyll-theme-hacker
 title: RP Software
 description: The easy way to find all my GitHub projects
+github:
+  is_project_page: false
